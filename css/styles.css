@@ -11,7 +11,7 @@ body {
 
 header {
   background: #2c3945;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 h1 {
@@ -30,11 +30,89 @@ h2 {
   text-align: left;
 }
 main {
-  padding: 10px 25px;
+  padding: 10px;
+}
+form.form-contact,
+textarea,
+input {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .signup h2,
 .signup p {
   text-align: center;
+}
+.signup hr {
+  border-width: 1px;
+  border-style: solid;
+  margin: 3px 0;
+}
+.signup hr:first-of-type {
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 2rem;
+}
+.contact hr {
+  border-width: 1px;
+  border-style: solid;
+}
+label,
+input,
+select {
+  display: block;
+}
+input,
+textarea,
+select {
+  background: #eff0f1;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+}
+select {
+  margin-top: 0.75rem;
+}
+#state option:first-of-type {
+  color: #999;
+}
+input#signup {
+  background: #4dbbb4;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: inherit;
+  margin: 1rem auto 0;
+}
+input::placeholder {
+  font-style: italic;
+  color: #aaa;
+  text-align: right;
+  padding-right: 1rem;
+}
+input#zip {
+  max-width: 50%;
+}
+input:active,
+input:focus,
+input:focus-visible,
+input:focus-within {
+  border: 2px solid #2c3945;
+}
+.checkboxes input,
+.radios input,
+.checkboxes label,
+.radios label {
+  width: auto;
+  display: inline-block;
+}
+label {
+  font-size: 0.9rem;
+  padding-bottom: 0.75rem;
+}
+fieldset {
+  border: none;
 }
 footer p {
   text-transform: capitalize;
@@ -45,5 +123,27 @@ footer p {
 
 /* Media Queries Tablet and Larger */
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  input,
+  select {
+    width: 80%;
+    display: inline-block;
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input#zip {
+    max-width: 40%;
+    margin-right: 40%;
+  }
+  input#signup {
+    width: 100%;
+    padding: 1.25rem;
+  }
 }
