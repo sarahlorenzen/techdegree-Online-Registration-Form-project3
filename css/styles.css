@@ -1,0 +1,49 @@
+body {
+  background: #fff;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #696969;
+}
+
+header {
+  background: #2c3945;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #2c3945;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: left;
+}
+main {
+  padding: 10px 25px;
+}
+.signup h2,
+.signup p {
+  text-align: center;
+}
+footer p {
+  text-transform: capitalize;
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Media Queries Tablet and Larger */
+
+@media (min-width: 768px) {
+}
