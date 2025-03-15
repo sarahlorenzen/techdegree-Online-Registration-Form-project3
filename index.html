@@ -23,87 +23,99 @@
         <hr />
         <hr />
       </div>
-      <div class="contact">
         <h2>Contact Information</h2>
-        <form action="index.html" method="post" class="form-contact">
-          <label>
-            Full Name
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              required=""
-              placeholder="Required"
-            />
-          </label>
-          <label>
-            Email Address
-            <input
-              type="email"
-              id="email"
-              name="user_email"
-              required=""
-              placeholder="Required"
-            />
-          </label>
-          <label>
-            Phone Number
-            <input type="tel" id="phone" name="user_phone" />
-          </label>
-          <label>
-            Street Address
-            <input type="text" id="street-address" name="user_street" />
-          </label>
-          <label>
-            City
-            <input type="text" id="city" name="user_city" />
-          </label>
-          <label>
-            State
-            <select id="state" name="user_state">
-              <option value="" disabled selected>Choose State</option>
-              <option value="az">AZ</option>
-              <option value="ca">CA</option>
-              <option value="co">CO</option>
-              <option value="or">OR</option>
-              <option value="wa">WA</option>
-            </select>
-          </label>
-          <label>
-            Zip Code
-            <input type="text" id="zip" name="user_zip" />
-          </label>
+        <form action="index.html" method="post">
+          <div class="contact">
+            <fieldset class="contact-inputs">
+              <legend>Select the newsletters you would like to receive</legend>
+              <label>
+                Full Name
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  required=""
+                  placeholder="Required"
+                />
+              </label>
+              <label>
+                Email Address
+                <input
+                  type="email"
+                  id="email"
+                  name="user_email"
+                  ¸
+                  required=""
+                  placeholder="Required"
+                />
+              </label>
+              <label>
+                Phone Number
+                <input type="tel" id="phone" name="user_phone" />
+              </label>
+              <label>
+                Street Address
+                <input type="text" id="street-address" name="user_street" />
+              </label>
+              <label>
+                City
+                <input type="text" id="city" name="user_city" />
+              </label>
+              <label>
+                State
+                <select id="state" name="user_state">
+                  <option value="" disabled selected>Choose State</option>
+                  <option value="az">AZ</option>
+                  <option value="ca">CA</option>
+                  <option value="co">CO</option>
+                  <option value="or">OR</option>
+                  <option value="wa">WA</option>
+                </select>
+              </label>
+              <label>
+                Zip Code
+                <input type="text" id="zip" name="user_zip" />
+              </label>
+            </fieldset>
+          </div>
           <hr />
-          <h2>Newsletter</h2>
-          <fieldset class="checkboxes">
-            <legend>Select the newsletters you would like to receive</legend>
-            <div>
-              <input type="checkbox" id="html" name="news_html" />
-              <label for="html">HTML News</label>
-            </div>
-            <div>
-              <input type="checkbox" id="css" name="news_css" />
-              <label for="css">CSS News</label>
-            </div>
-            <div>
-              <input type="checkbox" id="js" name="news_js" />
-              <label for="js">Javascript News</label>
-            </div>
-          </fieldset>
-          <fieldset class="radios">
-            <legend>Newsletter format</legend>
-            <div>
-              <input type="radio" id="html2" name="format_html" />
-              <label for="html2">HTML</label>
-            </div>
-            <div>
-              <input type="radio" id="plain" name="format_plain" />
-              <label for="plain">Plain text</label>
-            </div>
-          </fieldset>
-          <label for="topics">Other topics you'd like to hear about</label>
-          <textarea name="textarea" id="topics" rows="5"></textarea>
-          <input type="submit" id="signup" value="Sign Up" />
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+            <fieldset class="checkboxes">
+              <legend>Select the newsletters you would like to receive</legend>
+              <div>
+                <input type="checkbox" id="html" name="news_html" />
+                <label for="html">HTML News</label>
+              </div>
+              <div>
+                <input type="checkbox" id="css" name="news_css" />
+                <label for="css">CSS News</label>
+              </div>
+              <div>
+                <input type="checkbox" id="js" name="news_js" />
+                <label for="js">Javascript News</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="radios">
+              <legend>Newsletter format</legend>
+              <div>
+                <!-- Radio buttons must have the same name="value" for proper functionality -->
+                <input type="radio" id="format_html" name="format_news" />
+                <label for="format_html">HTML</label>
+              </div>
+              <div>
+                <input type="radio" id="format_plain" name="format_news" />
+                <label for="format_plain">Plain text</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="news-topics">
+              <label for="topics">Other topics you'd like to hear about</label>
+              <textarea name="textarea" id="topics" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" id="signup" value="Sign Up" />
+          </div>
         </form>
       </div>
     </main>
